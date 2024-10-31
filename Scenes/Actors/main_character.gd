@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -800.0
+@export var SPEED := 300.0
+@export var JUMP_VELOCITY := -700.0
+
 @onready var sprite_2d = $Sprite2D # drag sprite 2d then ctrl
 
 # coyote and jump buffering
@@ -50,7 +51,28 @@ func _physics_process(delta):
 		# gradually decelerates
 		velocity.x = move_toward(velocity.x, 0, 20) # last value in this param was SPEED... which is instant stop
 		
+
+	
 	move_and_slide()
 	
 	var isLeft = velocity.x < 0
 	sprite_2d.flip_h = isLeft
+	
+	# for testing
+	if Input.is_action_just_pressed("down"):
+		teleport()
+	
+
+
+func _on_victory_area_body_entered(body):
+	if body.name == "MainCharacter":  # Check if the player entered the area
+		print("Victory!")
+
+
+# for testing
+var teleport_location = Vector2(650, -500)
+
+func teleport():
+	position = teleport_location  # Set the character's position to the teleport location
+
+

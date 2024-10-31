@@ -1,0 +1,96 @@
+[gd_scene load_steps=15 format=3 uid="uid://ww7ky6m6gsay"]
+
+[ext_resource type="Texture2D" uid="uid://c4y2qqjieigph" path="res://Pixel Adventure Assets/Main Characters/Virtual Guy/Idle (32x32).png" id="1_hoqw2"]
+[ext_resource type="Script" path="res://dev_testing_sprite.gd" id="1_qwff1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_reinf"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klvoh"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcjtm"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggg4x"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qskim"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvgwl"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqllv"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ux3o"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4c5bt"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrxv4"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruxn2"]
+atlas = ExtResource("1_hoqw2")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rfxq8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_reinf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klvoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcjtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggg4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qskim")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvgwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqllv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ux3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4c5bt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrxv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruxn2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="DevTestingSprite" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_rfxq8")
+autoplay = "default"
+frame_progress = 0.573339
+script = ExtResource("1_qwff1")

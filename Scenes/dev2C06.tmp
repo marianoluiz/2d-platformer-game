@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds48aexpfn7hx"]
+
+[ext_resource type="Texture2D" uid="uid://cexhg80dvb18b" path="res://Pixel Adventure Assets/Main Characters/Ninja Frog/Jump (32x32).png" id="1_llrtw"]
+[ext_resource type="Script" path="res://scenes/dev_character.gd" id="2_xql1m"]
+
+[node name="DevCharacter" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(147, 596)
+scale = Vector2(1.46875, 1.625)
+texture = ExtResource("1_llrtw")
+script = ExtResource("2_xql1m")

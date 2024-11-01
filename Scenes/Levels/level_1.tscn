@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxfdfom1tiohs"]
 
-[ext_resource type="Texture2D" uid="uid://dn5anu7sokm3p" path="res://Pixel Adventure Assets/Background/Pink.png" id="1_a0don"]
-[ext_resource type="Texture2D" uid="uid://vic457mdhvgb" path="res://Pixel Adventure Assets/Terrain/Terrain (16x16).png" id="2_fr5th"]
+[ext_resource type="Texture2D" uid="uid://dn5anu7sokm3p" path="res://Assets/Background/Pink.png" id="1_a0don"]
+[ext_resource type="Texture2D" uid="uid://vic457mdhvgb" path="res://Assets/Terrain/Terrain (16x16).png" id="2_fr5th"]
 [ext_resource type="PackedScene" uid="uid://bbesnkv2uqe6l" path="res://Scenes/UI/victory_area.tscn" id="3_dowvn"]
 [ext_resource type="PackedScene" uid="uid://cbfuwm5lil12k" path="res://Scripts/Characters/main_character.tscn" id="4_jyj0p"]
 

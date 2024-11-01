@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dx5scdkt21e4m"]
+[gd_scene load_steps=8 format=3 uid="uid://dx5scdkt21e4m"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_2ahu3"]
-[ext_resource type="Texture2D" uid="uid://dn5anu7sokm3p" path="res://Pixel Adventure Assets/Background/Pink.png" id="1_mvnqe"]
+[ext_resource type="Texture2D" uid="uid://dn5anu7sokm3p" path="res://Assets/Background/Pink.png" id="2_q2y1d"]
+[ext_resource type="PackedScene" uid="uid://bmg7uqsawlerr" path="res://Scenes/audio_player.tscn" id="3_vlf2j"]
 
 [sub_resource type="SystemFont" id="SystemFont_ns02k"]
 font_names = PackedStringArray("Impact")
@@ -33,7 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_mvnqe")
+texture = ExtResource("2_q2y1d")
 
 [node name="MarginContainer" type="MarginContainer" parent="Menu"]
 layout_mode = 1
@@ -107,6 +108,8 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_kctot")
 theme_override_font_sizes/font_size = 24
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("3_vlf2j")]
 
 [connection signal="pressed" from="Menu/MarginContainer/HBoxContainer/VBoxContainer/Play" to="Menu" method="_on_play_pressed"]
 [connection signal="pressed" from="Menu/MarginContainer/HBoxContainer/VBoxContainer/Options" to="Menu" method="_on_options_pressed"]
